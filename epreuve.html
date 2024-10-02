@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OlymPass</title>
+    <link rel="icon" href="Assets/jeux-olympiques.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Header Design -->
+    <header class="header">
+      <a href="#" class="logo"><span>OlymP</span>ass</a>
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="acceuil.html">Accueil</a>
+        <a href="apropos.html">A propos</a>
+        <a href="epreuve.html">Epreuves</a>
+        <a href="billeterie.html">Billetterie</a>
+        <a href="contact.html">Contact</a>
+        <a href="epreuveEn.html"><i class="fa-solid fa-globe"></i></a>
+      </nav>
+    </header>
+
+    <!-- Section Epreuves-->
+    <section class="epreuve" id="Epreuves">
+      <h2 class="epreuve-header">
+        Epreuves de <span>BasketBall</span> et <span>HandBall</span>
+      </h2>
+
+      <div class="epreuve-w">
+        <div class="epreuve-container">
+          <input type="radio" name="slide" id="c1" checked />
+          <label for="c1" class="epreuve-card">
+            <div class="row">
+              <div class="epreuve-icon">1</div>
+              <div class="description">
+                <h4>BasketBall</h4>
+                <p>
+                  <strong>7 Matchs</strong> Masculin,
+                  <strong>6 Matchs</strong> Féminin et
+                  <strong>3 Matchs</strong> Mixtes.
+                </p>
+              </div>
+            </div>
+          </label>
+          <input type="radio" name="slide" id="c2" checked />
+          <label for="c2" class="epreuve-card">
+            <div class="row">
+              <div class="epreuve-icon">2</div>
+              <div class="description">
+                <h4>HandBall</h4>
+                <p>
+                  <strong>7 Match Masculin</strong>(quart, demie, medaille de
+                  bronze), <br /><strong>7 Match Masculin</strong>(quart, demie,
+                  medaille de bronze)
+                </p>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="epreuve-desc">
+        <p>
+          Vivez les JO dans les Hauts-de-France avec nos épreuves de BasketBall
+          et de HandBall à la Decathlon Arena de Lille. Avec le BasketBall, vous
+          assisterez à des duels épiques, tandis que le HandBall vous offrira
+          vitesse et esprit d'équipe. Ressentez l'adrénaline et vivez des
+          moments inoubliables. Réservez vos places dès maintenant pour vivre
+          une expérience unique.
+        </p>
+        <i class="fa-solid fa-medal"></i>
+      </div>
+
+      <div class="video-container">
+        <h2>Découvrez les <span>Jeux Olympiques</span></h2>
+        <div class="video">
+          <video
+            src="Assets/Les Jeux Olympiques et Paralympiques de Paris 2024.mp4"
+            controls
+          ></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="colonne">
+          <div class="footer-col">
+            <h4>OlymPass</h4>
+            <ul>
+              <li><a href="acceuil.html">Accueil</a></li>
+              <li><a href="epreuve.html">Nos services</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Aide</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Remboursements</a></li>
+              <li><a href="#">Statut</a></li>
+              <li><a href="#">Option de paiement</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Billetterie</h4>
+            <ul>
+              <li><a href="billeterie.html">Tickets</a></li>
+              <li><a href="epreuve.html">Epreuves</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Suivez-nous</h4>
+            <div class="social-links">
+              <a href="https://twitter.com/ActualiteBarca" target="_blank"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://fr-fr.facebook.com" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer copy -->
+    <section class="footer-copy">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Broland | All Rights Reserved</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="acceuil.html"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </section>
+  </body>
+</html>
