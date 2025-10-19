@@ -756,3 +756,47 @@ ul {
   font-size: 2.4rem;
   color: blue;
 }
+@media (max-width: 1024px) {
+  .Acceuil-cont h2 { font-size: 4.8rem; }
+  .Acceuil-img img { width: 30vw; }
+}
+
+@media (max-width: 768px) {
+  /* header / nav */
+  .header { padding: 1.2rem 4%; }
+  .logo { font-size: 2rem; }
+  #menu-icon { display: block; color: var(--text-color); cursor: pointer; }
+  .navbar { display: none; position: absolute; top: 100%; left: 0; width: 100%; flex-direction: column; background: var(--second-bg-color); box-shadow: 0 6px 18px rgba(0,0,0,0.08); z-index: 99; }
+  .navbar.active { display: flex; }
+  .navbar a { margin: 0; padding: 1rem 1.5rem; width: 100%; font-size: 1.8rem; border-top: 1px solid #eee; color: var(--text-color); }
+
+  /* hero / layout */
+  section.Acceuil { flex-direction: column-reverse; padding-top: 6rem; }
+  .Acceuil-img img { width: 60vw; padding-left: 0; margin-bottom: 2rem; display: block; margin-left: auto; margin-right: auto; }
+  .Acceuil-cont h2 { font-size: 3.6rem; text-align: center; }
+  .Acceuil-cont p { font-size: 1.6rem; text-align: center; padding: 0 1rem; }
+
+  /* about */
+  .about-container { gap: 1rem; }
+  .about-container .about-box { flex: 1 1 100%; }
+
+  /* billets/cards */
+  .billets-container { flex-direction: column; align-items: stretch; }
+  .billet { flex: 1 1 100%; margin: 0.6rem 0; }
+
+  /* responsive table */
+  main.billet-table { width: 95vw; height: auto; }
+  .billet-body { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .billet-body table { width: 100%; min-width: 720px; }
+  .billet-body table th, .billet-body table td { white-space: nowrap; }
+
+  /* contact / footer */
+  .contact-in { flex-direction: column; gap: 1.5rem; padding: 1rem; }
+  .footer-col { width: 100%; margin-bottom: 1.5rem; }
+  .footer-copy { padding: 1.5rem 4%; flex-direction: column; gap: 1rem; }
+}
+
+/* small polish: ensure menu-icon hidden on wider screens */
+@media (min-width: 769px) {
+  #menu-icon { display: none; }
+}
